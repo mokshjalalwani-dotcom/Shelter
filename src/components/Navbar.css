@@ -26,6 +26,7 @@
 .navbar-brand {
   display: flex;
   align-items: center;
+  gap: 12px;
 }
 
 .navbar-logo {

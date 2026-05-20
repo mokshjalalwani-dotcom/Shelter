@@ -10,6 +10,9 @@ export default function Navbar() {
       <nav className="navbar">
         <div className="navbar-container container">
           <div className="navbar-brand">
+            <button className="hamburger-btn" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+              {isMenuOpen ? '✕' : '☰'}
+            </button>
             <Link to="/" className="navbar-logo" onClick={() => setIsMenuOpen(false)}>
               <span className="navbar-title">SHELTER</span>
               <span className="navbar-subtitle">CAFÉ & GAMING ZONE</span>
@@ -25,10 +28,6 @@ export default function Navbar() {
             <Link to="/booking" className="btn btn-primary btn-sm navbar-book-btn">
               Book Now
             </Link>
-
-            <button className="hamburger-btn" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-              {isMenuOpen ? '✕' : '☰'}
-            </button>
           </div>
         </div>
       </nav>
