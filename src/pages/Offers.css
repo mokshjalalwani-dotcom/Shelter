@@ -1,0 +1,109 @@
+.offers-header {
+  text-align: center;
+  margin-bottom: var(--space-2xl);
+}
+
+.offers-header h1 {
+  font-size: var(--fs-3xl);
+  margin-bottom: var(--space-xs);
+}
+
+/* Filters */
+.offers-filters {
+  display: flex;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-xl);
+}
+
+.offers-filters .chip {
+  cursor: pointer;
+}
+
+/* Grid */
+.offers-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+  margin-bottom: var(--space-2xl);
+}
+
+/* Card */
+.offer-card {
+  padding: 0;
+  animation: fade-in-up 0.5s ease forwards;
+  opacity: 0;
+}
+
+.offer-card-top {
+  padding: var(--space-xl) var(--space-xl) var(--space-lg);
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+  position: relative;
+}
+
+.offer-card-top .badge {
+  margin-bottom: var(--space-sm);
+}
+
+.offer-top-offer {
+  background: linear-gradient(135deg, #FDE8EA, #FAD0D4);
+}
+
+.offer-top-event {
+  background: linear-gradient(135deg, #E8E0F8, #D4D0F0);
+}
+
+.offer-card-event {
+  border-color: rgba(140, 100, 220, 0.15);
+}
+
+.offer-card-title {
+  font-family: var(--font-display);
+  font-weight: var(--fw-extrabold);
+  font-size: var(--fs-xl);
+  text-transform: uppercase;
+  color: var(--text-primary);
+  line-height: 1.2;
+}
+
+.offer-card-subtitle {
+  font-weight: var(--fw-semibold);
+  font-size: var(--fs-base);
+  color: var(--text-secondary);
+  margin-top: 4px;
+}
+
+.offer-card-bottom {
+  padding: var(--space-lg) var(--space-xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-base);
+}
+
+.offer-card-desc {
+  font-size: var(--fs-sm);
+  line-height: 1.5;
+}
+
+/* Bottom */
+.offers-bottom {
+  text-align: center;
+  padding: var(--space-2xl);
+  background: var(--grey-100);
+  border-radius: var(--radius-xl);
+}
+
+.offers-bottom p {
+  font-family: var(--font-display);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-lg);
+  margin-bottom: var(--space-base);
+}
+
+@media (min-width: 769px) {
+  .offers-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .offers-header h1 {
+    font-size: var(--fs-4xl);
+  }
+}
