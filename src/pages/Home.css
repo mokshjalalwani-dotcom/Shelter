@@ -168,15 +168,30 @@
 .hide-mobile { display: none; }
 
 @media (max-width: 768px) {
-  .hero-float-card {
-    font-size: 0.65rem;
-    padding: 7px 12px;
+  .hero {
+    min-height: calc(100svh - 132px); /* 100svh minus navbar & bottom nav */
+    align-items: flex-start;
   }
-  .hero-float-1 { top: 5%; left: 2%; }
-  .hero-float-2 { top: 12%; right: 2%; }
+  .hero-float-card {
+    font-size: 0.6rem;
+    padding: 6px 10px;
+  }
+  .hero-float-1 { top: 2%; left: 2%; }
+  .hero-float-2 { top: 8%; right: 2%; }
   
   .hero-container {
-    padding-top: 160px;
+    padding: 100px 16px 40px;
+  }
+  .hero-title {
+    font-size: 2.8rem;
+    margin-bottom: var(--space-md);
+  }
+  .hero-subtitle {
+    font-size: 0.9rem;
+    margin-bottom: var(--space-lg);
+  }
+  .hero-badge {
+    margin-bottom: var(--space-md);
   }
 }
 
