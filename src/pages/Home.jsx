@@ -18,8 +18,8 @@ export default function Home() {
         {/* Floating live cards */}
         <div className="hero-float hero-float-1">
           <div className="hero-float-card glass-card">
-            <span className="pulse-dot-success"></span>
-            <span>Open Now</span>
+            <span>🔥</span>
+            <span>{LIVE_STATUS.activeGamers} Playing Now</span>
           </div>
         </div>
         <div className="hero-float hero-float-2">
@@ -43,8 +43,8 @@ export default function Home() {
             {/* Inline live status on mobile to prevent overlapping */}
             <div className="hero-mobile-status">
               <div className="hero-status-card glass-card">
-                <span className="pulse-dot-success"></span>
-                <span>Open Now</span>
+                <span>🔥</span>
+                <span>{LIVE_STATUS.activeGamers} Playing Now</span>
               </div>
               <div className="hero-status-card glass-card">
                 <span>🎮</span>
