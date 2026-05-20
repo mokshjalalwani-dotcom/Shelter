@@ -113,7 +113,8 @@
   position: relative;
   z-index: 2;
   text-align: center;
-  padding: 120px 16px 80px;
+  padding: 32px 16px;
+  width: 100%;
 }
 
 .hero-content {
@@ -170,17 +171,16 @@
 @media (max-width: 768px) {
   .hero {
     min-height: calc(100svh - 132px); /* 100svh minus navbar & bottom nav */
-    align-items: flex-start;
   }
   .hero-float-card {
     font-size: 0.6rem;
     padding: 6px 10px;
   }
-  .hero-float-1 { top: 2%; left: 2%; }
-  .hero-float-2 { top: 8%; right: 2%; }
+  .hero-float-1 { top: 8%; left: 4%; }
+  .hero-float-2 { top: 15%; right: 4%; }
   
   .hero-container {
-    padding: 100px 16px 40px;
+    padding: 16px;
   }
   .hero-title {
     font-size: 2.8rem;
