@@ -355,5 +355,4 @@ export const NAV_ITEMS = [
   { path: '/games', label: 'Games', icon: '🎮' },
   { path: '/offers', label: 'Offers', icon: '🏷️' },
   { path: '/gallery', label: 'Gallery', icon: '📸' },
-  { path: '/booking', label: 'Book', icon: '🎮' },
 ];
