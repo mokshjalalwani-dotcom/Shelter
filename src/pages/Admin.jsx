@@ -122,7 +122,7 @@ export default function Admin() {
                 <p className="text-muted">Requires attention</p>
               </div>
               <div className="admin-stat-card" onClick={() => setActiveTab('live')}>
-                <span className="admin-stat-icon">📡</span>
+                <span className="admin-stat-icon">⚡</span>
                 <h3>Live Status</h3>
                 <p className="text-muted">Currently: {liveVibe}</p>
               </div>
@@ -162,7 +162,7 @@ export default function Admin() {
             <h3 className="heading-display" style={{ padding: '0 16px', marginBottom: '16px' }}>SHELTER ADMIN</h3>
             <button className={`admin-nav-item ${activeTab === 'dashboard' ? 'active' : ''}`} onClick={() => setActiveTab('dashboard')}>📊 Dashboard</button>
             <button className={`admin-nav-item ${activeTab === 'inquiries' ? 'active' : ''}`} onClick={() => setActiveTab('inquiries')}>📩 Inquiries <span className="badge badge-red" style={{ marginLeft: 'auto' }}>{inquiries.filter(i => i.status === 'pending').length}</span></button>
-            <button className={`admin-nav-item ${activeTab === 'live' ? 'active' : ''}`} onClick={() => setActiveTab('live')}>📡 Live Status</button>
+            <button className={`admin-nav-item ${activeTab === 'live' ? 'active' : ''}`} onClick={() => setActiveTab('live')}>⚡ Live Status</button>
             <button className={`admin-nav-item ${activeTab === 'games' ? 'active' : ''}`} onClick={() => setActiveTab('games')}>🎮 Games</button>
             <button className={`admin-nav-item`} onClick={() => alert('Static demo')}>📋 Menu</button>
             <button className={`admin-nav-item`} onClick={() => alert('Static demo')}>🏷️ Offers</button>

@@ -351,7 +351,7 @@ export const GAME_INTERESTS = [
 export const NAV_ITEMS = [
   { path: '/', label: 'Home', icon: '🏠' },
   { path: '/menu', label: 'Menu', icon: '📋' },
-  { path: '/live', label: 'Live', icon: '📡' },
+  { path: '/live', label: 'Live', icon: '⚡' },
   { path: '/games', label: 'Games', icon: '🎮' },
   { path: '/offers', label: 'Offers', icon: '🏷️' },
   { path: '/gallery', label: 'Gallery', icon: '📸' },

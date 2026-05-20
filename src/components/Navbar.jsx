@@ -47,7 +47,7 @@ export default function Navbar() {
               <Link to="/" onClick={() => setIsMenuOpen(false)}>🏠 Home Dashboard</Link>
               <Link to="/menu" onClick={() => setIsMenuOpen(false)}>📋 Menu</Link>
               <Link to="/games" onClick={() => setIsMenuOpen(false)}>🎮 Game Zone</Link>
-              <Link to="/live" onClick={() => setIsMenuOpen(false)}>📡 Live Status</Link>
+              <Link to="/live" onClick={() => setIsMenuOpen(false)}>⚡ Live Status</Link>
               <Link to="/offers" onClick={() => setIsMenuOpen(false)}>🏷️ Offers & Events</Link>
               <Link to="/gallery" onClick={() => setIsMenuOpen(false)}>📸 Gallery</Link>
               <Link to="/booking" onClick={() => setIsMenuOpen(false)}>📅 Book Gaming</Link>
