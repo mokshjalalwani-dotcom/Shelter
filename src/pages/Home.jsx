@@ -39,6 +39,19 @@ export default function Home() {
               Gaming. Café.<br />
               <span className="hero-title-accent">Live Vibe.</span>
             </h1>
+
+            {/* Inline live status on mobile to prevent overlapping */}
+            <div className="hero-mobile-status">
+              <div className="hero-status-card glass-card">
+                <span className="pulse-dot-success"></span>
+                <span>Open Now</span>
+              </div>
+              <div className="hero-status-card glass-card">
+                <span>🎮</span>
+                <span>{LIVE_STATUS.gamesAvailable} Games Available</span>
+              </div>
+            </div>
+
             <p className="hero-subtitle">
               Book gaming. Explore the menu. Feel the vibe.<br className="hide-mobile" />
               Check what's happening before you come.

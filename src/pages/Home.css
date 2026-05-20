@@ -168,16 +168,40 @@
 
 .hide-mobile { display: none; }
 
+/* Hide inline status indicators on desktop by default */
+.hero-mobile-status {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .hero {
     min-height: calc(100svh - 132px); /* 100svh minus navbar & bottom nav */
   }
-  .hero-float-card {
-    font-size: 0.6rem;
-    padding: 6px 10px;
+  
+  /* Hide absolute floating cards on mobile to prevent overlapping */
+  .hero-float-1,
+  .hero-float-2 {
+    display: none !important;
   }
-  .hero-float-1 { top: 8%; left: 4%; }
-  .hero-float-2 { top: 15%; right: 4%; }
+  
+  /* Center and style the inline live status row on mobile */
+  .hero-mobile-status {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-lg);
+  }
+  
+  .hero-status-card {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.7rem;
+    font-weight: var(--fw-bold);
+    white-space: nowrap;
+    padding: 6px 12px;
+  }
   
   .hero-container {
     padding: 16px;
